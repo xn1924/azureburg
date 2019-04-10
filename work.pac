@@ -3,7 +3,9 @@ function FindProxyForURL(url, host) {
     if (dnsDomainIs(host, 'jijindou.com') ||
         dnsDomainIs(host, 'licaigc.com') ||
         dnsDomainIs(host, 'talicai.lcgc.io') ||
-        dnsDomainIs(host, 'talicai.com')
+        dnsDomainIs(host, 'talicai.com') ||
+                dnsDomainIs(host, 'haoguihua.cn') ||
+        dnsDomainIs(host, 'guihua.com')
        ) {
      //这里填你自己的局域网ip，端口号是你在Charles里设置的 默认8888
       if (isInNet(myIpAddress(), "192.168.10.0", "255.255.252.0")) {
